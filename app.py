@@ -149,7 +149,7 @@ def dashboard():
             return render_template('dashboard.html')
         
         # Save the uploaded image
-        image_path = os.path.join('../accident-damage-detection/', 'uploaded_image.jpg')
+        image_path = os.path.join('../accident-damage-detection/static/', 'uploaded_image.jpg')
         print("File uploaded successfully")
         
         file.save(image_path)
@@ -161,7 +161,7 @@ def dashboard():
         class_counts = Counter(class_ids)
         # print(f"Class counts : {class_counts}")
         # Save the image with detections
-        detected_image_path = os.path.join('../accident-damage-detection/', 'detected_image.jpg')
+        detected_image_path = os.path.join('../accident-damage-detection/static/', 'detected_image.jpg')
         detected_image_path = result[0].save(detected_image_path)
         print(f"Detected image path : {detected_image_path}")
         # Get the user's email from session

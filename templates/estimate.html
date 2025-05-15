@@ -205,8 +205,8 @@
                     <tr>
                         <th>Part Name</th>
                         <th>Count</th>
-                        <th>Price per Part ($)</th>
-                        <th>Total Price ($)</th>
+                        <th>Price per Part</th>
+                        <th>Total Price</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -221,7 +221,7 @@
                 </tbody>
             </table>
             <div class="total-cost">
-                Total Estimated Price: ₹{{ part_prices.values() | map(attribute='total') | sum }}
+                Total Estimated Price: {{ part_prices.values() | map(attribute='total') | sum }}
             </div>
         </div>
         <button class="print-button" onclick="window.print()">Print Quotation</button>
