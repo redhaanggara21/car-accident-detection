@@ -1,4 +1,4 @@
-# 🤖 Accident Damage Detection and Repair Cost Estimation
+# Accident Damage Detection and Repair Cost Estimation
 
 [Accident Damage Detection and Repair Cost Estimation](https://github.com/user-attachments/assets/5b6b8a1d-cb9c-4b57-87a5-dc80ceeb955e)
 
