@@ -116,3 +116,24 @@ The detected parts are highlighted in the image, and the system estimates repair
   ```bash
   python app.py
   ```
+
+5. Run the Testing:
+  ```bash
+  pytest --cov=test_web_app --cov-report=term-missing --cov-branch
+  python -m test
+  python -m pytest
+  python -m pytest ./tests -vv
+  ```
+
+6. Example Testing:
+  ```bash
+    https://github.com/pallets/flask/blob/main/examples/tutorial/README.rst
+  ```
+
+env\Scripts\activate.bat
+pip install --editable .
+
+set FLASK_APP=flaskr
+set FLASK_DEBUG=true
+flask initdb
+flask run
